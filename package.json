@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Renée Kooi <renee@kooi.me>",
   "bugs": {
-    "url": "https://github.com/goto-bus-stop/mini-unassertify/issues"
+    "url": "https://github.com/goto-bus-stop/mini-unassert/issues"
   },
   "dependencies": {
     "estree-is-require": "^1.0.0",
@@ -20,7 +20,7 @@
     "tap-spec": "^5.0.0",
     "tape": "^4.0.0"
   },
-  "homepage": "https://github.com/goto-bus-stop/mini-unassertify",
+  "homepage": "https://github.com/goto-bus-stop/mini-unassert",
   "keywords": [
     "assert",
     "browserify",
@@ -34,7 +34,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/goto-bus-stop/mini-unassertify.git"
+    "url": "https://github.com/goto-bus-stop/mini-unassert.git"
   },
   "scripts": {
     "test": "standard && node test | tap-spec"
