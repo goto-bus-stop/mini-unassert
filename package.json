@@ -9,6 +9,7 @@
   "dependencies": {
     "estree-is-require": "^1.0.0",
     "scope-analyzer": "^2.0.1",
+    "through2": "^2.0.3",
     "transform-ast": "^2.4.3"
   },
   "devDependencies": {
