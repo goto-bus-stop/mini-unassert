@@ -1,0 +1,41 @@
+{
+  "name": "mini-unassert",
+  "description": "remove assert calls from a stream of javascript",
+  "version": "0.0.0",
+  "author": "Renée Kooi <renee@kooi.me>",
+  "bugs": {
+    "url": "https://github.com/goto-bus-stop/mini-unassertify/issues"
+  },
+  "dependencies": {
+    "estree-is-require": "^1.0.0",
+    "scope-analyzer": "^2.0.1",
+    "transform-ast": "^2.4.3"
+  },
+  "devDependencies": {
+    "convert-source-map": "^1.5.1",
+    "dedent": "^0.7.0",
+    "simple-concat": "^1.0.0",
+    "standard": "^11.0.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.0.0"
+  },
+  "homepage": "https://github.com/goto-bus-stop/mini-unassertify",
+  "keywords": [
+    "assert",
+    "browserify",
+    "browserify-transform",
+    "optimization",
+    "production",
+    "transform",
+    "unassert"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goto-bus-stop/mini-unassertify.git"
+  },
+  "scripts": {
+    "test": "standard && node test | tap-spec"
+  }
+}
