@@ -96,3 +96,21 @@ test('browserify transform', function (t) {
     assert.throws(function () {})
   `)
 })
+
+test('does not parse files without asserts', function (t) {
+  t.plan(2)
+  var s = unassertify({})
+  var input = dedent`
+    var xyz = require('lala')
+    xyz.beep(boop)
+    if (typeof xyz === 'function') {
+      xyz(xyz)()
+    }
+  `
+  concat(s, function (err, result) {
+    t.ifError(err)
+    var src = convert.removeComments(result.toString())
+    t.equal(result.toString(), input)
+  })
+  s.end(input)
+})

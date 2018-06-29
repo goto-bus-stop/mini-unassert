@@ -12,6 +12,7 @@ module.exports = function (file, opts) {
 
   var src = ''
   var modules = Array.isArray(opts.modules) ? opts.modules : ['assert']
+  var rx = new RegExp(modules.join('|'))
 
   return through(onwrite, onend)
   function onwrite (chunk, enc, next) {
@@ -19,7 +20,11 @@ module.exports = function (file, opts) {
     next()
   }
   function onend (done) {
-    this.push(unassert(src, modules))
+    if (rx.test(src)) {
+      this.push(unassert(src, modules))
+    } else {
+      this.push(src)
+    }
     done()
   }
 }
