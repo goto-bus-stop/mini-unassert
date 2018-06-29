@@ -1,7 +1,7 @@
 {
   "name": "mini-unassert",
   "description": "remove assert calls from a stream of javascript",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": "Renée Kooi <renee@kooi.me>",
   "bugs": {
     "url": "https://github.com/goto-bus-stop/mini-unassert/issues"
