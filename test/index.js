@@ -109,7 +109,6 @@ test('does not parse files without asserts', function (t) {
   `
   concat(s, function (err, result) {
     t.ifError(err)
-    var src = convert.removeComments(result.toString())
     t.equal(result.toString(), input)
   })
   s.end(input)
